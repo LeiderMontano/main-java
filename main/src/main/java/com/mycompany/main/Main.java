@@ -6,7 +6,7 @@ package com.mycompany.main;
 
 /**
  *
- * @author leider
+ * @author leide
  */
 public class Main {
 
