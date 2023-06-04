@@ -12,7 +12,7 @@ import java.io.InputStreamReader;
  *
  * @author leide
  */
-public class main2 {
+public class Main02 {
     
     public static void main(String[] args) throws IOException {
         
