@@ -7,7 +7,6 @@ package com.mycompany.main;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.text.DecimalFormat;
 
 /**
  *
@@ -19,21 +18,16 @@ public class NumeroParOImpar {
         /**
          * Esta función sirve para recibir los números.
          */
-        System.out.println("Ingresa tres números.");
+        System.out.println("Ingresa un número y te diré si es Par o Impar.");
         
-        System.out.println("Ingresa el primer numero y luego presiona el boton Enter:");
+        System.out.println("Ingresa el número y luego presiona el boton Enter:");
         Integer num1 = cargarNumeros();
-        
-        System.out.println("Ingresa el segundo numero y luego presiona el boton Enter:");
-        Integer num2 = cargarNumeros();
-        
-        System.out.println("Ingresa el tercer numero y luego presiona el boton Enter:");
-        Integer num3 = cargarNumeros();
         
         /**
          * Sirve para imprimir el número.
          */
-        calcularNumeroPromedio (num1, num2, num3);
+        calcularNumeroPar (num1);
+        //calcularNumeroImpar (num1);
      }
     
     private static Integer cargarNumeros() throws IOException{
@@ -50,19 +44,16 @@ public class NumeroParOImpar {
         return num;
     }
     
-    private static void calcularNumeroPromedio (Integer num1,Integer num2, Integer num3){
+    private static void calcularNumeroPar (Integer num1){
         /**
-         * Esta función sirve para calcular el número promedio.
+         * Esta función sirve para calcular si el número es Par o Impar.
          */
+                       
+        if (num1%2 == 0){
+            System.out.println("!" + num1 + " es un número Par!");
+        }else {
+            System.out.println("!" + num1 + " es un número Impar!");
+        }
         
-        double suma = num1 + num2 + num3;
-        double numPromedio = suma/3;
-        
-        DecimalFormat formatoSensillo = new DecimalFormat("#.00");
-        
-        System.out.println("La suma de los tres numeros es: " + formatoSensillo.format(suma));
-        
-        System.out.println("El número promedio es: " + formatoSensillo.format(numPromedio));
     }
-    
 }

@@ -2,4 +2,5 @@ com\mycompany\main\Main.class
 com\mycompany\main\Main02.class
 com\mycompany\main\NumeroPromedio.class
 com\mycompany\main\NumeroMayorYMenor.class
+com\mycompany\main\NumeroParOImpar.class
 com\mycompany\main\Funciones.class
