@@ -13,9 +13,9 @@ import java.text.DecimalFormat;
  *
  * @author leide
  */
-public class NumeroPromedio {
+public class NumeroParOImpar {
     
-     public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
         /**
          * Esta función sirve para recibir los números.
          */

@@ -15,7 +15,7 @@ import java.io.InputStreamReader;
 public class Funciones {
     public static void main(String[] args) throws IOException {
         /**
-         * Esta funciín sirve para recibir los numeros
+         * Esta función sirve para recibir los números.
          */
         System.out.println("Ingresa tres números.");
         
@@ -29,7 +29,7 @@ public class Funciones {
         Integer num3 = cargarNumeros();
         
         /**
-         * Sirve para imprimir lo numeros
+         * Sirve para imprimir los números.
          */
         calcularNumeroMayor (num1, num2, num3);
         calcularNumeroMenor (num1, num2, num3);
@@ -37,7 +37,7 @@ public class Funciones {
     
     private static Integer cargarNumeros() throws IOException{
         /**
-         * Esta función sirve para perdir el ingreso de los numeros
+         * Esta función sirve para perdir el ingreso de los números.
          */
         InputStreamReader CapturarTeclado = new InputStreamReader(System.in);
         BufferedReader buffer = new BufferedReader(CapturarTeclado);
@@ -51,7 +51,7 @@ public class Funciones {
     
     private static void calcularNumeroMayor (Integer num1,Integer num2, Integer num3){
         /**
-         * Esta función sirve para calcular el numero mayor
+         * Esta función sirve para calcular el número mayor.
          */
         Integer numMayor = num1; 
         
@@ -67,7 +67,7 @@ public class Funciones {
     
     private static void calcularNumeroMenor (Integer num1,Integer num2, Integer num3){
         /**
-         * Esta Función sirve para calcualar el numero menor
+         * Esta Función sirve para calcualar el número menor.
          */
         Integer nunMenor = num1;
         
