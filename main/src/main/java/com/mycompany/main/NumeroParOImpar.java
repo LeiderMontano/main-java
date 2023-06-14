@@ -27,7 +27,7 @@ public class NumeroParOImpar {
          * Sirve para imprimir el número.
          */
         calcularNumeroPar (num1);
-        //calcularNumeroImpar (num1);
+        
      }
     
     private static Integer cargarNumeros() throws IOException{
@@ -49,7 +49,7 @@ public class NumeroParOImpar {
          * Esta función sirve para calcular si el número es Par o Impar.
          */
                        
-        if (num1%2 == 0){
+        if (num1 % 2 == 0){
             System.out.println("!" + num1 + " es un número Par!");
         }else {
             System.out.println("!" + num1 + " es un número Impar!");
